@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "name": "rag-consultant",
+  "description": {
+    "de-DE": "Beantwortet Fragen anhand der Dokumente in seiner RAG-Bibliothek, belegt jede Aussage mit der passenden Textstelle und sagt es, wenn die Dokumente etwas nicht abdecken.",
+    "en-GB": "Answers questions from the documents in its RAG library, cites the passage behind each claim, and says so when the documents do not cover something.",
+    "en-US": "Answers questions from the documents in its RAG library, cites the passage behind each claim, and says so when the documents do not cover something.",
+    "es-AR": "Responde preguntas con los documentos de su biblioteca RAG, cita el fragmento que respalda cada afirmación y avisa cuando los documentos no cubren algo.",
+    "es-ES": "Responde preguntas con los documentos de su biblioteca RAG, cita el fragmento que respalda cada afirmación y avisa cuando los documentos no cubren algo.",
+    "fr-FR": "Répond aux questions à partir des documents de sa bibliothèque RAG, cite le passage qui étaye chaque affirmation et le signale quand les documents ne couvrent pas un point.",
+    "he-IL": "מענה על שאלות מתוך המסמכים בספריית ה-RAG של הסוכן, ציטוט הקטע שעליו נשענת כל טענה, וציון מפורש כשהמסמכים לא מכסים נושא מסוים.",
+    "hi-IN": "अपनी RAG लाइब्रेरी के दस्तावेज़ों से सवालों के जवाब देता है, हर दावे के पीछे का अंश उद्धृत करता है, और जब दस्तावेज़ों में कोई बात न हो तो साफ़ बताता है।",
+    "it-IT": "Risponde alle domande con i documenti della sua biblioteca RAG, cita il passaggio che sostiene ogni affermazione e lo dice quando i documenti non coprono qualcosa.",
+    "ja-JP": "RAGライブラリの文書をもとに質問に答え、各主張の根拠となる箇所を引用し、文書に記載がない場合はそう伝えます。",
+    "ko-KR": "RAG 라이브러리의 문서를 바탕으로 질문에 답하고, 각 주장을 뒷받침하는 구절을 인용하며, 문서에 없는 내용은 없다고 알려 줍니다.",
+    "pt-BR": "Responde a perguntas com os documentos da sua biblioteca RAG, cita o trecho que sustenta cada afirmação e avisa quando os documentos não cobrem algo.",
+    "pt-PT": "Responde a perguntas com os documentos da sua biblioteca RAG, cita o excerto que sustenta cada afirmação e avisa quando os documentos não cobrem algo.",
+    "ru-RU": "Отвечает на вопросы по документам своей RAG-библиотеки, подкрепляет каждое утверждение ссылкой на фрагмент и сообщает, когда в документах чего-то нет.",
+    "zh-CN": "根据其 RAG 文档库中的文档回答问题，为每个论断引用依据段落，并在文档未涵盖时如实说明。"
+  },
+  "tools": [
+    "rag.search",
+    "rag.read",
+    "rag.list"
+  ],
+  "schedules": [],
+  "limits": {
+    "max_tokens_per_run": 40000,
+    "max_steps_per_run": 12,
+    "timeout_seconds": 300,
+    "max_runs_per_day": 100
+  },
+  "rag": {
+    "enabled": true
+  }
+}

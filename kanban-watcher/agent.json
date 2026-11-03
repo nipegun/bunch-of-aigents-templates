@@ -1,0 +1,37 @@
+{
+  "format": 1,
+  "name": "kanban-watcher",
+  "description": {
+    "de-DE": "Liest jeden Morgen das Board und schreibt eine kurze Zusammenfassung: was sich bewegt hat, was hängt und was fällig ist.",
+    "en-GB": "Reads the board every morning and writes one short summary of what moved, what is stuck and what is due.",
+    "en-US": "Reads the board every morning and writes one short summary of what moved, what is stuck and what is due.",
+    "es-AR": "Lee el tablero cada mañana y escribe un resumen corto de lo que se movió, lo que está atascado y lo que vence.",
+    "es-ES": "Lee el tablero cada mañana y escribe un resumen corto de lo que se movió, lo que está atascado y lo que vence.",
+    "fr-FR": "Lit le tableau chaque matin et écrit un court résumé de ce qui a bougé, ce qui bloque et ce qui arrive à échéance.",
+    "he-IL": "קריאת הלוח בכל בוקר וכתיבת סיכום קצר אחד: מה התקדם, מה תקוע ומה הגיע מועדו.",
+    "hi-IN": "हर सुबह बोर्ड पढ़ता है और एक छोटा सारांश लिखता है: क्या आगे बढ़ा, क्या अटका है और क्या देय है।",
+    "it-IT": "Legge la lavagna ogni mattina e scrive un breve riassunto di cosa si è mosso, cosa è bloccato e cosa scade.",
+    "ja-JP": "毎朝ボードを読み、動いたもの、止まっているもの、期限が近いものを短くまとめます。",
+    "ko-KR": "매일 아침 보드를 읽고 무엇이 진행됐는지, 무엇이 막혔는지, 무엇이 마감인지 짧게 정리합니다.",
+    "pt-BR": "Lê o quadro todas as manhãs e escreve um resumo curto do que se moveu, do que está preso e do que vence.",
+    "pt-PT": "Lê o quadro todas as manhãs e escreve um resumo curto do que se moveu, do que está preso e do que vence.",
+    "ru-RU": "Каждое утро читает доску и пишет короткую сводку: что сдвинулось, что застряло и что подходит к сроку.",
+    "zh-CN": "每天早上读看板，写一段简短总结：什么在推进、什么卡住了、什么快到期了。"
+  },
+  "tools": [
+    "kanban.list_cards",
+    "kanban.add_card",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "0 8 * * 1-5"
+  ],
+  "limits": {
+    "max_tokens_per_run": 12000,
+    "max_steps_per_run": 8,
+    "timeout_seconds": 180,
+    "max_runs_per_day": 2
+  }
+}

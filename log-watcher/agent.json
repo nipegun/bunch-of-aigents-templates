@@ -1,0 +1,38 @@
+{
+  "format": 1,
+  "name": "log-watcher",
+  "description": {
+    "de-DE": "Liest die angegebenen Protokolle und meldet, was neu ist oder sich wiederholt, statt alles.",
+    "en-GB": "Reads the logs you point it at, and reports what is new or repeating rather than everything that is there.",
+    "en-US": "Reads the logs you point it at, and reports what is new or repeating rather than everything that is there.",
+    "es-AR": "Lee los registros que le indiques e informa de lo nuevo o lo que se repite, en vez de todo lo que hay.",
+    "es-ES": "Lee los registros que le indiques e informa de lo nuevo o lo que se repite, en vez de todo lo que hay.",
+    "fr-FR": "Lit les journaux indiqués et signale ce qui est nouveau ou récurrent, plutôt que tout ce qui s'y trouve.",
+    "he-IL": "קריאת הלוגים שציינת ודיווח על מה שחדש או חוזר על עצמו, במקום על כל מה שיש בהם.",
+    "hi-IN": "आपके बताए लॉग पढ़ता है और सब कुछ नहीं, बल्कि जो नया है या दोहरा रहा है वही बताता है।",
+    "it-IT": "Legge i log indicati e riporta ciò che è nuovo o si ripete, invece di tutto quello che c'è.",
+    "ja-JP": "指定したログを読み、そこにあるすべてではなく、新しいことや繰り返していることを報告します。",
+    "ko-KR": "지정한 로그를 읽고 전부가 아니라 새롭거나 반복되는 것을 보고합니다.",
+    "pt-BR": "Lê os registos indicados e comunica o que é novo ou se repete, em vez de tudo o que lá está.",
+    "pt-PT": "Lê os registos indicados e comunica o que é novo ou se repete, em vez de tudo o que lá está.",
+    "ru-RU": "Читает указанные журналы и сообщает о новом или повторяющемся, а не обо всём подряд.",
+    "zh-CN": "读取你指定的日志，报告其中新出现或反复出现的内容，而不是全部内容。"
+  },
+  "tools": [
+    "bash.run",
+    "kanban.add_card",
+    "kanban.list_cards",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "5 */4 * * *"
+  ],
+  "limits": {
+    "max_tokens_per_run": 16000,
+    "max_steps_per_run": 15,
+    "timeout_seconds": 240,
+    "max_runs_per_day": 12
+  }
+}

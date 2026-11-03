@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "name": "os-watcher",
+  "description": {
+    "de-DE": "Überwacht Platte, Speicher, Last und Dienste dieser Maschine und meldet, bevor ein Problem zum Ausfall wird.",
+    "en-GB": "Watches disk, memory, load and the services of this machine, and reports before a problem becomes an outage.",
+    "en-US": "Watches disk, memory, load and the services of this machine, and reports before a problem becomes an outage.",
+    "es-AR": "Vigila el disco, la memoria, la carga y los servicios de esta máquina, e informa antes de que un problema sea una caída.",
+    "es-ES": "Vigila el disco, la memoria, la carga y los servicios de esta máquina, e informa antes de que un problema sea una caída.",
+    "fr-FR": "Surveille le disque, la mémoire, la charge et les services de cette machine, et prévient avant qu'un problème ne devienne une panne.",
+    "he-IL": "מעקב אחר הדיסק, הזיכרון, העומס והשירותים של המכונה הזו, ודיווח לפני שבעיה הופכת להשבתה.",
+    "hi-IN": "इस मशीन के डिस्क, मेमोरी, लोड और सेवाओं पर नज़र रखता है और समस्या के ठप होने से पहले बताता है।",
+    "it-IT": "Sorveglia disco, memoria, carico e servizi di questa macchina e avvisa prima che un problema diventi un guasto.",
+    "ja-JP": "このマシンのディスク、メモリ、負荷、サービスを見張り、問題が障害になる前に知らせます。",
+    "ko-KR": "이 머신의 디스크, 메모리, 부하, 서비스를 지켜보고 문제가 장애가 되기 전에 알립니다.",
+    "pt-BR": "Vigia o disco, a memória, a carga e os serviços desta máquina e avisa antes de um problema virar uma falha.",
+    "pt-PT": "Vigia o disco, a memória, a carga e os serviços desta máquina e avisa antes de um problema virar uma falha.",
+    "ru-RU": "Следит за диском, памятью, нагрузкой и службами этой машины и сообщает до того, как проблема станет сбоем.",
+    "zh-CN": "监视这台机器的磁盘、内存、负载和服务，在问题变成故障之前提醒你。"
+  },
+  "tools": [
+    "bash.run",
+    "kanban.add_card",
+    "kanban.move_card",
+    "kanban.list_cards",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "17 * * * *"
+  ],
+  "limits": {
+    "max_tokens_per_run": 12000,
+    "max_steps_per_run": 15,
+    "timeout_seconds": 180,
+    "max_runs_per_day": 48
+  }
+}

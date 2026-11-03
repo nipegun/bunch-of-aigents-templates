@@ -1,0 +1,41 @@
+{
+  "format": 1,
+  "name": "mail-watcher",
+  "description": {
+    "de-DE": "Beobachtet das eingerichtete Postfach und handelt nach den Regeln, die in diesem Prompt stehen.",
+    "en-GB": "Watches the configured mailbox and acts on what arrives, following rules you write into this prompt.",
+    "en-US": "Watches the configured mailbox and acts on what arrives, following rules you write into this prompt.",
+    "es-AR": "Vigila el buzón configurado y actúa sobre lo que llega, siguiendo las reglas que escribas en este prompt.",
+    "es-ES": "Vigila el buzón configurado y actúa sobre lo que llega, siguiendo las reglas que escribas en este prompt.",
+    "fr-FR": "Surveille la boîte configurée et agit sur ce qui arrive, selon les règles écrites dans ce prompt.",
+    "he-IL": "מעקב אחר תיבת הדואר שהוגדרה וטיפול במה שמגיע אליה, לפי הכללים שכותבים בפרומפט הזה.",
+    "hi-IN": "कॉन्फ़िगर किए गए मेलबॉक्स पर नज़र रखता है और इस प्रॉम्प्ट में लिखे नियमों के अनुसार कार्रवाई करता है।",
+    "it-IT": "Sorveglia la casella configurata e agisce su ciò che arriva, seguendo le regole scritte in questo prompt.",
+    "ja-JP": "設定されたメールボックスを見張り、このプロンプトに書いた規則に従って届いたものに対応します。",
+    "ko-KR": "설정된 메일함을 지켜보고 이 프롬프트에 적은 규칙에 따라 도착한 메일을 처리합니다.",
+    "pt-BR": "Vigia a caixa de correio configurada e age sobre o que chega, seguindo as regras escritas neste prompt.",
+    "pt-PT": "Vigia a caixa de correio configurada e age sobre o que chega, seguindo as regras escritas neste prompt.",
+    "ru-RU": "Следит за настроенным почтовым ящиком и действует по правилам, записанным в этом промпте.",
+    "zh-CN": "监视已配置的邮箱，并按你写在此提示词中的规则处理收到的邮件。"
+  },
+  "tools": [
+    "mail.read",
+    "mail.move",
+    "mail.delete",
+    "mail.forward",
+    "kanban.add_card",
+    "kanban.list_cards",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "*/15 * * * *"
+  ],
+  "limits": {
+    "max_tokens_per_run": 16000,
+    "max_steps_per_run": 20,
+    "timeout_seconds": 300,
+    "max_runs_per_day": 96
+  }
+}

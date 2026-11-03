@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "name": "backup-watcher",
+  "description": {
+    "de-DE": "Prüft, ob die genannten Sicherungen wirklich gelaufen sind, aktuell sind und nicht verdächtig klein.",
+    "en-GB": "Checks that the backups you told it about actually ran, are recent, and are not suspiciously small.",
+    "en-US": "Checks that the backups you told it about actually ran, are recent, and are not suspiciously small.",
+    "es-AR": "Comprueba que las copias de seguridad que le indicaste se hicieron de verdad, son recientes y no son sospechosamente pequeñas.",
+    "es-ES": "Comprueba que las copias de seguridad que le indicaste se hicieron de verdad, son recientes y no son sospechosamente pequeñas.",
+    "fr-FR": "Vérifie que les sauvegardes indiquées ont bien eu lieu, sont récentes et ne sont pas étrangement petites.",
+    "he-IL": "בדיקה שהגיבויים שציינת אכן רצו, שהם עדכניים ושאינם קטנים באופן חשוד.",
+    "hi-IN": "जाँचता है कि बताए गए बैकअप सचमुच चले, हाल के हैं और संदिग्ध रूप से छोटे नहीं हैं।",
+    "it-IT": "Controlla che i backup indicati siano stati fatti davvero, siano recenti e non sospettosamente piccoli.",
+    "ja-JP": "指定したバックアップが実際に実行され、新しく、不自然に小さくないかを確認します。",
+    "ko-KR": "알려준 백업이 실제로 실행되었고 최신이며 의심스럽게 작지 않은지 확인합니다.",
+    "pt-BR": "Verifica se as cópias de segurança indicadas foram mesmo feitas, são recentes e não são suspeitosamente pequenas.",
+    "pt-PT": "Verifica se as cópias de segurança indicadas foram mesmo feitas, são recentes e não são suspeitosamente pequenas.",
+    "ru-RU": "Проверяет, что указанные резервные копии действительно создавались, свежие и не подозрительно малы.",
+    "zh-CN": "检查你指定的备份是否真的运行过、是否是最近的、大小是否异常偏小。"
+  },
+  "tools": [
+    "bash.run",
+    "kanban.add_card",
+    "kanban.move_card",
+    "kanban.list_cards",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "0 9 * * *"
+  ],
+  "limits": {
+    "max_tokens_per_run": 12000,
+    "max_steps_per_run": 15,
+    "timeout_seconds": 240,
+    "max_runs_per_day": 4
+  }
+}

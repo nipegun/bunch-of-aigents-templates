@@ -1,0 +1,37 @@
+{
+  "format": 1,
+  "name": "disk-cleaner",
+  "description": {
+    "de-DE": "Findet, was die Platte füllt, und nennt mit Größen, was weg könnte. Schlägt vor; löscht nie.",
+    "en-GB": "Finds what is filling the disk and says what could go, with sizes. Proposes; never deletes.",
+    "en-US": "Finds what is filling the disk and says what could go, with sizes. Proposes; never deletes.",
+    "es-AR": "Encuentra qué está llenando el disco y dice qué podría irse, con tamaños. Propone; nunca borra.",
+    "es-ES": "Encuentra qué está llenando el disco y dice qué podría irse, con tamaños. Propone; nunca borra.",
+    "fr-FR": "Trouve ce qui remplit le disque et indique ce qui pourrait partir, avec les tailles. Propose ; ne supprime jamais.",
+    "he-IL": "איתור מה שממלא את הדיסק והצגת מה שאפשר להסיר, כולל הגדלים. הצעות בלבד; שום דבר לא נמחק.",
+    "hi-IN": "पता लगाता है कि डिस्क क्या भर रहा है और आकार के साथ बताता है कि क्या हटाया जा सकता है। सुझाव देता है; कभी हटाता नहीं।",
+    "it-IT": "Trova cosa sta riempiendo il disco e dice cosa potrebbe andarsene, con le dimensioni. Propone; non cancella mai.",
+    "ja-JP": "ディスクを埋めているものを探し、サイズ付きで削除候補を挙げます。提案するだけで、削除はしません。",
+    "ko-KR": "디스크를 채우는 것을 찾아 크기와 함께 지울 만한 것을 알려줍니다. 제안만 하고 삭제하지 않습니다.",
+    "pt-BR": "Encontra o que está a encher o disco e diz o que poderia sair, com tamanhos. Propõe; nunca apaga.",
+    "pt-PT": "Encontra o que está a encher o disco e diz o que poderia sair, com tamanhos. Propõe; nunca apaga.",
+    "ru-RU": "Находит, что заполняет диск, и называет, что можно убрать, с размерами. Предлагает, но никогда не удаляет.",
+    "zh-CN": "找出占满磁盘的内容，并列出可以清理的项目和大小。只建议，从不删除。"
+  },
+  "tools": [
+    "bash.run",
+    "kanban.add_card",
+    "kanban.list_cards",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "0 5 * * 0"
+  ],
+  "limits": {
+    "max_tokens_per_run": 12000,
+    "max_steps_per_run": 15,
+    "timeout_seconds": 300,
+    "max_runs_per_day": 2
+  }
+}

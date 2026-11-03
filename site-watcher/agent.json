@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "name": "site-watcher",
+  "description": {
+    "de-DE": "Prüft, ob die genannten Seiten antworten, schnell antworten und noch dasselbe sagen wie vorher.",
+    "en-GB": "Checks that the sites you list answer, answer quickly, and still say what they used to say.",
+    "en-US": "Checks that the sites you list answer, answer quickly, and still say what they used to say.",
+    "es-AR": "Comprueba que los sitios que enumeres responden, responden rápido y siguen diciendo lo que decían.",
+    "es-ES": "Comprueba que los sitios que enumeres responden, responden rápido y siguen diciendo lo que decían.",
+    "fr-FR": "Vérifie que les sites listés répondent, répondent vite et disent toujours ce qu'ils disaient.",
+    "he-IL": "בדיקה שהאתרים שציינת מגיבים, מגיבים מהר ועדיין מציגים את מה שהציגו קודם.",
+    "hi-IN": "जाँचता है कि आपके बताए साइट जवाब देते हैं, जल्दी जवाब देते हैं और वही कहते हैं जो पहले कहते थे।",
+    "it-IT": "Controlla che i siti elencati rispondano, rispondano in fretta e dicano ancora quello che dicevano.",
+    "ja-JP": "指定したサイトが応答するか、速く応答するか、以前と同じことを言っているかを確認します。",
+    "ko-KR": "나열한 사이트가 응답하는지, 빠르게 응답하는지, 예전과 같은 내용을 보여주는지 확인합니다.",
+    "pt-BR": "Verifica se os sites indicados respondem, respondem depressa e continuam a dizer o que diziam.",
+    "pt-PT": "Verifica se os sites indicados respondem, respondem depressa e continuam a dizer o que diziam.",
+    "ru-RU": "Проверяет, что указанные сайты отвечают, отвечают быстро и говорят то же, что и раньше.",
+    "zh-CN": "检查你列出的站点是否响应、响应是否够快、内容是否和以前一致。"
+  },
+  "tools": [
+    "web.fetch",
+    "bash.run",
+    "kanban.add_card",
+    "kanban.move_card",
+    "kanban.list_cards",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "*/20 * * * *"
+  ],
+  "limits": {
+    "max_tokens_per_run": 10000,
+    "max_steps_per_run": 12,
+    "timeout_seconds": 180,
+    "max_runs_per_day": 72
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "name": "web-navigator",
+  "description": {
+    "de-DE": "Nutzt den eigenen Browser für das, worum du auf einer Seite bittest: suchen, anmelden, Formular ausfüllen, klicken und berichten.",
+    "en-GB": "Uses its own browser to do what you ask on a site: search, log in, fill a form, click through and report what it found.",
+    "en-US": "Uses its own browser to do what you ask on a site: search, log in, fill a form, click through and report what it found.",
+    "es-AR": "Usa su propio navegador para hacer lo que le pidas en un sitio: buscar, iniciar sesión, rellenar un formulario, navegar e informar de lo que encontró.",
+    "es-ES": "Usa su propio navegador para hacer lo que le pidas en un sitio: buscar, iniciar sesión, rellenar un formulario, navegar e informar de lo que encontró.",
+    "fr-FR": "Utilise son propre navigateur pour faire ce que vous demandez sur un site : chercher, se connecter, remplir un formulaire, cliquer et rapporter.",
+    "he-IL": "שימוש בדפדפן ייעודי כדי לבצע באתר את מה שביקשת: חיפוש, התחברות, מילוי טופס, ניווט בלחיצות ודיווח על מה שנמצא.",
+    "hi-IN": "किसी साइट पर आपका कहा करने के लिए अपना ब्राउज़र इस्तेमाल करता है: खोजना, लॉग इन, फ़ॉर्म भरना, क्लिक करना और बताना।",
+    "it-IT": "Usa il proprio browser per fare quello che chiedi su un sito: cercare, accedere, compilare un modulo, navigare e riferire.",
+    "ja-JP": "自分のブラウザーでサイト上の依頼をこなします。検索、ログイン、フォーム入力、クリック、そして結果の報告。",
+    "ko-KR": "자체 브라우저로 사이트에서 요청한 일을 합니다: 검색, 로그인, 양식 작성, 클릭, 그리고 결과 보고.",
+    "pt-BR": "Usa o seu próprio navegador para fazer o que pedires num site: procurar, iniciar sessão, preencher um formulário, navegar e relatar.",
+    "pt-PT": "Usa o seu próprio navegador para fazer o que pedires num site: procurar, iniciar sessão, preencher um formulário, navegar e relatar.",
+    "ru-RU": "Использует собственный браузер, чтобы сделать на сайте то, о чём вы просите: найти, войти, заполнить форму, перейти и рассказать.",
+    "zh-CN": "用它自己的浏览器在网站上完成你的要求：搜索、登录、填表、点击，并汇报结果。"
+  },
+  "tools": [
+    "browser.open",
+    "browser.read",
+    "browser.click",
+    "browser.type",
+    "browser.screenshot",
+    "image.send",
+    "web.fetch",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [],
+  "limits": {
+    "max_tokens_per_run": 20000,
+    "max_steps_per_run": 25,
+    "timeout_seconds": 600,
+    "max_runs_per_day": 48
+  }
+}

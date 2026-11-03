@@ -1,0 +1,38 @@
+{
+  "format": 1,
+  "name": "news-watcher",
+  "description": {
+    "de-DE": "Liest die im Prompt genannten RSS-Feeds und berichtet nach den dort geschriebenen Regeln, was wissenswert ist.",
+    "en-GB": "Reads the RSS feeds listed in its prompt and tells you what is worth knowing, following the rules you write there.",
+    "en-US": "Reads the RSS feeds listed in its prompt and tells you what is worth knowing, following the rules you write there.",
+    "es-AR": "Lee los canales RSS que figuran en su prompt y te cuenta lo que merece la pena saber, siguiendo las reglas que escribas ahí.",
+    "es-ES": "Lee los canales RSS que figuran en su prompt y te cuenta lo que merece la pena saber, siguiendo las reglas que escribas ahí.",
+    "fr-FR": "Lit les flux RSS indiqués dans son prompt et signale ce qui mérite d'être su, selon les règles qui y sont écrites.",
+    "he-IL": "קריאת הזנות ה-RSS שמופיעות בפרומפט ודיווח על מה שכדאי לדעת, לפי הכללים שכותבים שם.",
+    "hi-IN": "अपने प्रॉम्प्ट में सूचीबद्ध RSS फ़ीड पढ़ता है और वहाँ लिखे नियमों के अनुसार बताता है कि क्या जानने लायक है।",
+    "it-IT": "Legge i feed RSS elencati nel suo prompt e racconta ciò che vale la pena sapere, seguendo le regole scritte lì.",
+    "ja-JP": "プロンプトに挙げた RSS フィードを読み、そこに書いた規則に従って知る価値のあることを伝えます。",
+    "ko-KR": "프롬프트에 나열한 RSS 피드를 읽고 거기 적은 규칙에 따라 알 만한 것을 알려줍니다.",
+    "pt-BR": "Lê os feeds RSS indicados no seu prompt e conta o que vale a pena saber, seguindo as regras aí escritas.",
+    "pt-PT": "Lê os feeds RSS indicados no seu prompt e conta o que vale a pena saber, seguindo as regras aí escritas.",
+    "ru-RU": "Читает RSS-ленты, перечисленные в его промпте, и рассказывает о важном по записанным там правилам.",
+    "zh-CN": "读取提示词中列出的 RSS 源，并按你在其中写的规则告诉你值得知道的内容。"
+  },
+  "tools": [
+    "rss.fetch",
+    "kanban.add_card",
+    "kanban.list_cards",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "7 */2 * * *"
+  ],
+  "limits": {
+    "max_tokens_per_run": 20000,
+    "max_steps_per_run": 15,
+    "timeout_seconds": 300,
+    "max_runs_per_day": 12
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "name": "cert-watcher",
+  "description": {
+    "de-DE": "Prüft, wann die TLS-Zertifikate der genannten Seiten ablaufen, und warnt, solange noch Zeit zur Erneuerung bleibt.",
+    "en-GB": "Checks when the TLS certificates of the sites you list expire, and warns while there is still time to renew.",
+    "en-US": "Checks when the TLS certificates of the sites you list expire, and warns while there is still time to renew.",
+    "es-AR": "Comprueba cuándo caducan los certificados TLS de los sitios que enumeres y avisa mientras todavía hay tiempo de renovarlos.",
+    "es-ES": "Comprueba cuándo caducan los certificados TLS de los sitios que enumeres y avisa mientras todavía hay tiempo de renovarlos.",
+    "fr-FR": "Vérifie quand expirent les certificats TLS des sites listés et prévient tant qu'il reste le temps de les renouveler.",
+    "he-IL": "בדיקה מתי יפוג תוקפן של תעודות ה-TLS של האתרים שציינת, ואזהרה כל עוד יש זמן לחדש אותן.",
+    "hi-IN": "आपके बताए साइटों के TLS प्रमाणपत्रों की समाप्ति जाँचता है और नवीनीकरण का समय रहते चेतावनी देता है।",
+    "it-IT": "Controlla quando scadono i certificati TLS dei siti elencati e avvisa finché c'è ancora tempo per rinnovarli.",
+    "ja-JP": "指定したサイトの TLS 証明書の有効期限を調べ、更新する時間があるうちに知らせます。",
+    "ko-KR": "나열한 사이트의 TLS 인증서 만료 시점을 확인하고 갱신할 시간이 남아 있을 때 알립니다.",
+    "pt-BR": "Verifica quando expiram os certificados TLS dos sites indicados e avisa enquanto ainda há tempo de renovar.",
+    "pt-PT": "Verifica quando expiram os certificados TLS dos sites indicados e avisa enquanto ainda há tempo de renovar.",
+    "ru-RU": "Проверяет, когда истекают TLS-сертификаты указанных сайтов, и предупреждает, пока есть время их обновить.",
+    "zh-CN": "检查你列出的站点的 TLS 证书何时到期，并在还来得及续期时提醒你。"
+  },
+  "tools": [
+    "bash.run",
+    "kanban.add_card",
+    "kanban.move_card",
+    "kanban.list_cards",
+    "channel.write",
+    "memory.append",
+    "memory.replace"
+  ],
+  "schedules": [
+    "30 6 * * *"
+  ],
+  "limits": {
+    "max_tokens_per_run": 10000,
+    "max_steps_per_run": 12,
+    "timeout_seconds": 180,
+    "max_runs_per_day": 4
+  }
+}
